@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/adrianbroher/ghaction-junitxml2annotations/issues"
   },
-  "homepage": "https://github.com/adrianbroher/ghaction-junitxml2annotations#readme"
+  "homepage": "https://github.com/adrianbroher/ghaction-junitxml2annotations#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3"
+  }
 }
