@@ -1,0 +1,26 @@
+{
+  "name": "ghaction-junitxml2annocations",
+  "version": "0.1.0",
+  "description": "Create GitHub Check Annotations from JUnit XML reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianbroher/ghaction-junitxml2annotations.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Action",
+    "Checks",
+    "JUnit",
+    "XML"
+  ],
+  "author": "Marcel Metz",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/adrianbroher/ghaction-junitxml2annotations/issues"
+  },
+  "homepage": "https://github.com/adrianbroher/ghaction-junitxml2annotations#readme"
+}
