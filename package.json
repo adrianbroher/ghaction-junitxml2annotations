@@ -4,7 +4,8 @@
   "description": "Create GitHub Check Annotations from JUnit XML reports",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write index.js",
+    "format-check": "prettier --check index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
   "dependencies": {
     "@actions/core": "^1.2.3",
     "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
   }
 }
