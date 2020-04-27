@@ -4,8 +4,9 @@
   "description": "Create GitHub Check Annotations from JUnit XML reports",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write index.js",
-    "format-check": "prettier --check index.js"
+    "test": "mocha index.test.js",
+    "format": "prettier --write index.js index.test.js",
+    "format-check": "prettier --check index.js index.test.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "@actions/github": "^2.1.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
     "prettier": "^2.0.5"
   }
 }
