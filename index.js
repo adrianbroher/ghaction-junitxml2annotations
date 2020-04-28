@@ -1,8 +1,24 @@
+const fs = require("fs");
+const path = require("path");
 const core = require("@actions/core");
 const github = require("@actions/github");
 
+function load_report(report_path) {
+  if (!fs.existsSync(report_path)) {
+    throw new Error(`Cannot open JUnit XML report: ${report_path}`);
+  }
+}
+
+module.exports = {
+  load_report,
+};
+
 try {
-  console.log("Hello world");
+  const report_file = path.join(
+    core.getInput("junit-report-file") || "./junit.xml"
+  );
+  report_document = load_report(report_file);
+  console.log(report_document);
 } catch (error) {
   core.setFailed(error.message);
 }
